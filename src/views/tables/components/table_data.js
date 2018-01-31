@@ -2,24 +2,42 @@ export const table1Columns = [
     {
         title: '序号',
         type: 'index',
-        width: 80,
+        width: 30,
         align: 'center'
+    },
+    {
+        title: '用户名',
+        align: 'center',
+        key: 'code',
+        editable: true
     },
     {
         title: '姓名',
         align: 'center',
-        key: 'name',
+        key: 'username'
+    },
+    {
+        title: '角色',
+        align: 'center',
+        key: 'role',
         editable: true
     },
     {
-        title: '性别',
+        title: '邮箱',
         align: 'center',
-        key: 'sex'
+        key: 'email',
+        editable: true
     },
-    {
-        title: '岗位',
+     {
+        title: '电话',
         align: 'center',
-        key: 'work',
+        key: 'tel',
+        editable: true
+    },
+     {
+        title: '状态',
+        align: 'center',
+        key: 'status',
         editable: true
     },
     {
@@ -27,25 +45,20 @@ export const table1Columns = [
         align: 'center',
         width: 120,
         key: 'handle',
-        handle: ['delete']
+         handle: ['edit', 'delete']
     }
 ];
 
 export const table1Data = [
     {
-        name: 'Aresn',
-        sex: '男',
-        work: '前端开发'
-    },
-    {
-        name: 'Lison',
-        sex: '男',
-        work: '前端开发'
-    },
-    {
-        name: 'lisa',
-        sex: '女',
-        work: '程序员鼓励师'
+        code:'penghl',
+        username:'彭海龙',
+        role:'技术经理',
+        name: 'penghl',
+        email: 'wwww.asp.citic',
+        work: '前端开发',
+        tel:'13883166161',
+        status:'1'
     }
 ];
 
@@ -53,52 +66,74 @@ export const editInlineColumns = [
     {
         title: '序号',
         type: 'index',
-        width: 80,
+        width : 80,
         align: 'center'
+    },
+    {
+        title: '用户名',
+        align: 'center',
+        key: 'code',
+        editable: true
     },
     {
         title: '姓名',
         align: 'center',
-        key: 'name',
-        width: 90,
+        key: 'username'
+    },
+    {
+        title: '角色',
+        align: 'center',
+        key: 'role',
         editable: true
     },
     {
-        title: '性别',
+        title: '邮箱',
         align: 'center',
-        key: 'sex'
+        key: 'email',
+        editable: true
     },
-    {
-        title: '岗位',
+     {
+        title: '电话',
         align: 'center',
-        key: 'work',
-        width: 150,
+        key: 'tel',
         editable: true
     },
     {
-        title: '操作',
+        title: '部门',
         align: 'center',
-        width: 190,
-        key: 'handle',
-        handle: ['edit', 'delete']
+        width: 180,
+        key: 'dept',
+        editable: false
     }
+    ,   
+     {
+        title: '状态',
+        align: 'center',
+        key: 'status',
+        width : 80,
+        editable: true
+    }
+    
+    // {
+    //     title: '操作',
+    //     align: 'center',
+    //     width: 180,
+    //     key: 'handle'
+    //     handle: ['edit','delete']
+    // }
 ];
 
 export const editInlineData = [
-    {
-        name: 'Aresn',
-        sex: '男',
-        work: '前端开发'
-    },
-    {
-        name: 'Lison',
-        sex: '男',
-        work: '前端开发'
-    },
-    {
-        name: 'lisa',
-        sex: '女',
-        work: '程序员鼓励师'
+     {
+        code:'penghl',
+        username:'彭海龙',
+        role:'项目经理',
+        name: 'penghl',
+        email: 'wwww.asp.citic',
+        work: '前端开发',
+        tel:'13883166161',
+        dept:'风控业务一部',
+        status:'启用'
     }
 ];
 
@@ -185,8 +220,8 @@ export const editInlineAndCellColumn = [
         title: '操作',
         align: 'center',
         width: 200,
-        key: 'handle',
-        handle: ['edit', 'delete']
+        key: 'handle'
+        // handle: ['edit', 'delete']
     }
 ];
 

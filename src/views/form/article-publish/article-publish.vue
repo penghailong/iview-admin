@@ -44,7 +44,7 @@
                         </Select>
                     </p>
                     <p class="margin-top-10">
-                        <Icon type="eye"></Icon>&nbsp;&nbsp;公开度：&nbsp;<b>{{ Openness }}</b>
+                        <Icon type="eye"></Icon>&nbsp;&nbsp;修改用户信息：&nbsp;<b>{{ Openness }}</b>
                         <Button v-show="!editOpenness" size="small" @click="handleEditOpenness" type="text">修改</Button>
                         <transition name="openness-con">
                             <div v-show="editOpenness" class="openness-radio-con">

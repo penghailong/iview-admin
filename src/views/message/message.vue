@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="message-content-con">
-            <transition name="view-message">
+            <transition name="role-list">
                 <div v-if="showMesTitleList" class="message-title-list-con">
                     <Table ref="messageList" :columns="mesTitleColumns" :data="currentMesList" :no-data-text="noDataText"></Table>
                 </div>

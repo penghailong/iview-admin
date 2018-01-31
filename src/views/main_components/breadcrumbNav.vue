@@ -1,8 +1,8 @@
 <template>
     <Breadcrumb>
-        <BreadcrumbItem 
-            v-for="item in $store.state.currentPath" 
-            :href="item.path" 
+        <BreadcrumbItem
+            v-for="item in $store.state.currentPath"
+            :href="item.path"
             :key="item.name"
         >{{itemTitle(item)}}</BreadcrumbItem>
     </Breadcrumb>
@@ -25,4 +25,3 @@ export default {
     }
 };
 </script>
-

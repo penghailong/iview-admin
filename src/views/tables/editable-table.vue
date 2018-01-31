@@ -31,10 +31,10 @@
                     </div>
                 </Card>
             </Col>
-            <Col span="18" class="padding-left-10">
+            <Col span="24" class="padding-left-10">
                 <Card>
                     <div class="edittable-con-1">
-                        <can-edit-table refs="table1" v-model="tableData" :columns-list="columnsList" :saveEdit="saveEdit" :deleteRow="deleteRow"></can-edit-table>
+                        <can-edit-table refs="" v-model="tableData" :columns-list="columnsList" :saveEdit="saveEdit" :deleteRow="deleteRow"></can-edit-table>
                     </div>
                 </Card>
             </Col>
@@ -58,7 +58,7 @@
                         可编辑单元格(鼠标移入显示编辑单元格按钮)
                     </p>
                     <div class="edittable-table-height-con">
-                        <can-edit-table refs="table3" v-model="editIncellData" :hover-show="true" :edit-incell="true" :columns-list="editIncellColumns" :saveEdit="saveEditIncell" :deleteRow="deleteRowIncell"></can-edit-table>
+                        <can-edit-table refs="" v-model="editIncellData" :hover-show="true" :edit-incell="true" :columns-list="editIncellColumns" :saveEdit="saveEditIncell" :deleteRow="deleteRowIncell"></can-edit-table>
                     </div>
                 </Card>
             </Col>
@@ -78,7 +78,7 @@
                         </Col>
                         <Col span="22">
                             <div class="edittable-table-height-con">
-                                <can-edit-table refs="table4" v-model="editInlineAndCellData" :editIncell="true" :columns-list="editInlineAndCellColumn" :saveEdit="saveEditInlineIncell" :deleteRow="deleteRowInlineIncell"></can-edit-table>
+                                <can-edit-table refs="" v-model="editInlineAndCellData" :editIncell="true" :columns-list="editInlineAndCellColumn" :saveEdit="saveEditInlineIncell" :deleteRow="deleteRowInlineIncell"></can-edit-table>
                             </div>
                         </Col>
                         <Modal :width="900" v-model="showCurrentTableData">
